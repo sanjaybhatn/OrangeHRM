@@ -10,7 +10,7 @@ import pages.HRMEmailSubscriptionPage;
 
 public class HRMEmailSubscriptionTest extends BaseTest {
 	
-	@Test
+	@Test(groups ={"SmokeTest"},testName = "TS 02 TC 01")
 	public void clickonLeaveapplication() throws Exception  {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
@@ -43,7 +43,7 @@ public class HRMEmailSubscriptionTest extends BaseTest {
 		
 	}
 	
-	@Test
+	@Test(groups ={"Regression Test"},testName = "TS 02 TC 02")
 	public void clickonLeaveapprovals() throws Exception  {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
@@ -76,7 +76,7 @@ public class HRMEmailSubscriptionTest extends BaseTest {
 		
 	}
 	
-	@Test
+	@Test(groups ={"Regression Test"},testName = "TS 02 TC 03")
 	public void clickonLeaveassignments() throws Exception  {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
@@ -109,7 +109,7 @@ public class HRMEmailSubscriptionTest extends BaseTest {
 		
 	}
 	
-	@Test
+	@Test(groups ={"Regression Test"},testName = "TS 02 TC 04")
 	public void clickonLeavecancellation() throws Exception  {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
@@ -142,7 +142,7 @@ public class HRMEmailSubscriptionTest extends BaseTest {
 		
 	}
 	
-	@Test
+	@Test(groups ={"Regression Test"},testName = "TS 02 TC 05")
 	public void clickonLeaverejection() throws Exception  {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);

@@ -7,7 +7,7 @@ import pages.HRMLocalizationPage;
 
 public class HRMLocalizationTest extends BaseTest {
 
-	@Test
+	@Test(groups ={"SmokeTest"},testName = "TS 03 TC 01")
 	public void ValidateLocalizationpage() throws Exception {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
@@ -25,7 +25,7 @@ public class HRMLocalizationTest extends BaseTest {
 
 	}
 	
-	@Test
+	@Test(groups ={"Regression Test"},testName = "TS 03 TC 02")
 	public void ValidateLocalizationSavebutton() throws Exception {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);

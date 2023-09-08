@@ -11,7 +11,7 @@ import pages.HRMModulesPage;
 
 public class HRMModulesTest extends BaseTest {
 	
-	@Test
+	@Test(groups ={"SmokeTest"},testName = "TS 04 TC 01")
 	public void valiadtemodules() throws Exception  {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
@@ -28,7 +28,7 @@ public class HRMModulesTest extends BaseTest {
 		}
 		
 	}
-	@Test
+	@Test(groups ={"Regression Test"},testName = "TS 04 TC 02")
 	public void valiadtemodulestoggle() throws Exception  {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);

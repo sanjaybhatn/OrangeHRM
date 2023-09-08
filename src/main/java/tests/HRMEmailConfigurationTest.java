@@ -7,7 +7,7 @@ import pages.HRMEmailConfigurationPage;
 
 public class HRMEmailConfigurationTest extends BaseTest {
 
-	@Test(testName = "TS 01 TC 01")
+	@Test(groups ={"SmokeTest"},testName = "TS 01 TC 01")
 	public void clickonEmailConfigurationSave() throws Exception {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
@@ -29,7 +29,7 @@ public class HRMEmailConfigurationTest extends BaseTest {
 		}
 	}
 
-	@Test(testName = "TS 01 TC 02")
+	@Test(groups ={"SmokeTest"},testName = "TS 01 TC 02")
 	public void clickonEmailConfigurationReset() throws Exception {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
@@ -52,7 +52,7 @@ public class HRMEmailConfigurationTest extends BaseTest {
 		}
 	}
 
-	@Test(testName = "TS 01 TC 03")
+	@Test(groups ={"Regression Test"},testName = "TS 01 TC 03")
 	public void clickonEmailConfigurationSecureSMTPSave() throws Exception {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
@@ -79,7 +79,7 @@ public class HRMEmailConfigurationTest extends BaseTest {
 		}
 	}
 
-	@Test(testName = "TS 01 TC 04")
+	@Test(groups ={"SmokeTest"},testName = "TS 01 TC 04")
 	public void clickonEmailConfigurationSecureSMTPReset() throws Exception {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
@@ -107,7 +107,7 @@ public class HRMEmailConfigurationTest extends BaseTest {
 		}
 	}
 
-	@Test(testName = "TS 01 TC 05")
+	@Test(groups ={"Regression Test"},testName = "TS 01 TC 05")
 	public void clickonEmailConfigurationSMTPSave() throws Exception {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
@@ -134,7 +134,7 @@ public class HRMEmailConfigurationTest extends BaseTest {
 		}
 	}
 
-	@Test(testName = "TS 01 TC 06")
+	@Test(groups ={"Regression Test"},testName = "TS 01 TC 06")
 	public void clickonEmailConfigurationSMTPReset() throws Exception {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);

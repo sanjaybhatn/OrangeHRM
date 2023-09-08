@@ -7,7 +7,7 @@ import pages.HRMOAuthClientPage;
 
 public class HRMOAuthClientTest extends BaseTest {
 
-	@Test
+	@Test(groups ={"SmokeTest"},testName = "TS 05 TC 01")
 	public void clickonOAuthClientConfig() throws Exception {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
@@ -24,7 +24,7 @@ public class HRMOAuthClientTest extends BaseTest {
 		}
 
 	}
-    @Test
+    @Test(groups ={"Regression Test"},testName = "TS 05 TC 02")
 	public void clickonaddOAuthClientConfig() throws Exception {
 		try {
 			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
