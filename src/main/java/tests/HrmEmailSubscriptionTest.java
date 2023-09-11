@@ -4,21 +4,21 @@ package tests;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import factory.PageinstancesFactory;
-import pages.HRMAdminPage;
-import pages.HRMEmailSubscriptionPage;
+import pages.HrmAdminPage;
+import pages.HrmEmailSubscriptionPage;
 
 
-public class HRMEmailSubscriptionTest extends BaseTest {
+public class HrmEmailSubscriptionTest extends BaseTest {
 	
 	@Test(groups ={"SmokeTest"},testName = "TS 02 TC 01")
 	public void clickonLeaveapplication() throws Exception  {
 		try {
-			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
-			hrmAdminPage.clickadmin();
+			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
+			hrmAdminPage.clickOnAdmin();
 			Thread.sleep(2000);
-			hrmAdminPage.clickonconfig();
+			hrmAdminPage.clickOnConfig();
 			Thread.sleep(2000);
-			HRMEmailSubscriptionPage hrmEmailSubscriptionPage=new HRMEmailSubscriptionPage(driver);
+			HrmEmailSubscriptionPage hrmEmailSubscriptionPage=new HrmEmailSubscriptionPage(driver);
 			hrmEmailSubscriptionPage.clickonEmailsub();
 			Thread.sleep(2000);
 			hrmEmailSubscriptionPage.clickonleaveApplicationAction();
@@ -46,12 +46,12 @@ public class HRMEmailSubscriptionTest extends BaseTest {
 	@Test(groups ={"Regression Test"},testName = "TS 02 TC 02")
 	public void clickonLeaveapprovals() throws Exception  {
 		try {
-			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
-			hrmAdminPage.clickadmin();
+			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
+			hrmAdminPage.clickOnAdmin();
 			Thread.sleep(2000);
-			hrmAdminPage.clickonconfig();
+			hrmAdminPage.clickOnConfig();
 			Thread.sleep(2000);
-			HRMEmailSubscriptionPage hrmEmailSubscriptionPage=new HRMEmailSubscriptionPage(driver);
+			HrmEmailSubscriptionPage hrmEmailSubscriptionPage=new HrmEmailSubscriptionPage(driver);
 			hrmEmailSubscriptionPage.clickonEmailsub();
 			Thread.sleep(2000);
 			hrmEmailSubscriptionPage.clickonleaveapprovalsAction();
@@ -79,12 +79,12 @@ public class HRMEmailSubscriptionTest extends BaseTest {
 	@Test(groups ={"Regression Test"},testName = "TS 02 TC 03")
 	public void clickonLeaveassignments() throws Exception  {
 		try {
-			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
-			hrmAdminPage.clickadmin();
+			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
+			hrmAdminPage.clickOnAdmin();
 			Thread.sleep(2000);
-			hrmAdminPage.clickonconfig();
+			hrmAdminPage.clickOnConfig();
 			Thread.sleep(2000);
-			HRMEmailSubscriptionPage hrmEmailSubscriptionPage=new HRMEmailSubscriptionPage(driver);
+			HrmEmailSubscriptionPage hrmEmailSubscriptionPage=new HrmEmailSubscriptionPage(driver);
 			hrmEmailSubscriptionPage.clickonEmailsub();
 			Thread.sleep(2000);
 			hrmEmailSubscriptionPage.clickonleaveAssignmentAction();
@@ -112,12 +112,12 @@ public class HRMEmailSubscriptionTest extends BaseTest {
 	@Test(groups ={"Regression Test"},testName = "TS 02 TC 04")
 	public void clickonLeavecancellation() throws Exception  {
 		try {
-			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
-			hrmAdminPage.clickadmin();
+			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
+			hrmAdminPage.clickOnAdmin();
 			Thread.sleep(2000);
-			hrmAdminPage.clickonconfig();
+			hrmAdminPage.clickOnConfig();
 			Thread.sleep(2000);
-			HRMEmailSubscriptionPage hrmEmailSubscriptionPage=new HRMEmailSubscriptionPage(driver);
+			HrmEmailSubscriptionPage hrmEmailSubscriptionPage=new HrmEmailSubscriptionPage(driver);
 			hrmEmailSubscriptionPage.clickonEmailsub();
 			Thread.sleep(2000);
 			hrmEmailSubscriptionPage.clickonleaveCancellationsAction();
@@ -145,12 +145,12 @@ public class HRMEmailSubscriptionTest extends BaseTest {
 	@Test(groups ={"Regression Test"},testName = "TS 02 TC 05")
 	public void clickonLeaverejection() throws Exception  {
 		try {
-			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
-			hrmAdminPage.clickadmin();
+			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
+			hrmAdminPage.clickOnAdmin();
 			Thread.sleep(2000);
-			hrmAdminPage.clickonconfig();
+			hrmAdminPage.clickOnConfig();
 			Thread.sleep(2000);
-			HRMEmailSubscriptionPage hrmEmailSubscriptionPage=new HRMEmailSubscriptionPage(driver);
+			HrmEmailSubscriptionPage hrmEmailSubscriptionPage=new HrmEmailSubscriptionPage(driver);
 			hrmEmailSubscriptionPage.clickonEmailsub();
 			Thread.sleep(2000);
 			hrmEmailSubscriptionPage.clickonleaveRejectionsAction();

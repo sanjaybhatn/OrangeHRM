@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-public class HRMOAuthClientPage extends BasePage {
+public class HrmOAuthClientPage extends BasePage {
 
-	public HRMOAuthClientPage(WebDriver driver) {
+	public HrmOAuthClientPage(WebDriver driver) {
 		super(driver);
 	}
 
@@ -39,47 +39,47 @@ public class HRMOAuthClientPage extends BasePage {
 	
 	
 
-	public HRMOAuthClientPage clickonOAuthlink() throws Exception {
+	public HrmOAuthClientPage clickonOAuthlink() throws Exception {
 		oauthClientLink.click();
 		Thread.sleep(2000);
 		return this;
 
 	}
 	
-	public HRMOAuthClientPage valiadtepagename(String Actualtext) {
+	public HrmOAuthClientPage valiadtepagename(String Actualtext) {
 		String ExpectedText = pagetext.getText();
 		Assert.assertTrue(ExpectedText.equals(Actualtext));
 		return this;
 
 	}
 	
-	public HRMOAuthClientPage clickonAddbutton() throws Exception {
+	public HrmOAuthClientPage clickonAddbutton() throws Exception {
 		AddButton.click();
 		Thread.sleep(3000);
 		return this;
 		
 	}
 	
-	public HRMOAuthClientPage enterName(String name) throws Exception {
+	public HrmOAuthClientPage enterName(String name) throws Exception {
 		NameField.sendKeys(name);
 		return this;
 		
 	}
 	
-	public HRMOAuthClientPage enterRedirectURI(String URlName) throws Exception {
+	public HrmOAuthClientPage enterRedirectURI(String URlName) throws Exception {
 		redirectURI.sendKeys(URlName);
 		return this;
 		
 	}
 	
-	public HRMOAuthClientPage clickonsaveButton() throws Exception {
+	public HrmOAuthClientPage clickonsaveButton() throws Exception {
 		submitButton.click();
 		Thread.sleep(2000);
 		return this;
 		
 	}
 	
-	public HRMOAuthClientPage clickondeleteButton() throws Exception {
+	public HrmOAuthClientPage clickondeleteButton() throws Exception {
 		deleteButton.click();
 		Thread.sleep(3000);
 		yesdeleteButton.click();

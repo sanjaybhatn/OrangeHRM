@@ -4,9 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HRMEmailSubscriptionPage extends BasePage {
+public class HrmEmailSubscriptionPage extends BasePage {
 
-	public HRMEmailSubscriptionPage(WebDriver driver) {
+	public HrmEmailSubscriptionPage(WebDriver driver) {
 		super(driver);
 	}
 
@@ -52,73 +52,73 @@ public class HRMEmailSubscriptionPage extends BasePage {
 	
 	
 	
-	public HRMEmailSubscriptionPage clickonEmailsub() {
+	public HrmEmailSubscriptionPage clickonEmailsub() {
 		emailconfigsub.click();
 		return this;
 
 	}
 	
-	public HRMEmailSubscriptionPage clickonactionToggle() {
+	public HrmEmailSubscriptionPage clickonactionToggle() {
 		actionToggle.click();
 		return this;
 		
 	}
 	
-	public HRMEmailSubscriptionPage clickonleaveApplicationAction() {
+	public HrmEmailSubscriptionPage clickonleaveApplicationAction() {
 		leaveApplicationActionButton.click();
 		return this;
 		
 	}
 	
-	public HRMEmailSubscriptionPage clickonleaveAssignmentAction() {
+	public HrmEmailSubscriptionPage clickonleaveAssignmentAction() {
 		leaveAssignmentsActionButton.click();
 		return this;
 		
 	}
 	
-	public HRMEmailSubscriptionPage clickonleaveapprovalsAction() {
+	public HrmEmailSubscriptionPage clickonleaveapprovalsAction() {
 		leaveApprovalsActionButton.click();
 		return this;
 		
 	}
 	
-	public HRMEmailSubscriptionPage clickonleaveCancellationsAction() {
+	public HrmEmailSubscriptionPage clickonleaveCancellationsAction() {
 		leaveCancellationsActionButton.click();
 		return this;
 		
 	}
 	
-	public HRMEmailSubscriptionPage clickonleaveRejectionsAction() {
+	public HrmEmailSubscriptionPage clickonleaveRejectionsAction() {
 		leaveRejectionsActionButton.click();
 		return this;
 		
 	}
 	
-	public HRMEmailSubscriptionPage clickonaddbutton() {
+	public HrmEmailSubscriptionPage clickonaddbutton() {
 		AddButton.click();
 		return this;
 		
 	}
 	
-	public HRMEmailSubscriptionPage EnterName(String name) {
+	public HrmEmailSubscriptionPage EnterName(String name) {
 		nameField.sendKeys(name);
 		return this;
 		
 	}
 	
-	public HRMEmailSubscriptionPage EnterEmailName(String emailname) {
+	public HrmEmailSubscriptionPage EnterEmailName(String emailname) {
 		EmailnameField.sendKeys(emailname);
 		return this;
 		
 	}
 	
-	public HRMEmailSubscriptionPage clickonsubmit() {
+	public HrmEmailSubscriptionPage clickonsubmit() {
 		submitButton.click();
 		return this;
 		
 	}
 	
-	public HRMEmailSubscriptionPage clickondelete() {
+	public HrmEmailSubscriptionPage clickondelete() {
 		deleteButton.click();
 		yesdeleteButton.click();
 		return this;

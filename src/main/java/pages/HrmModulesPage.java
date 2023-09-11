@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-public class HRMModulesPage extends BasePage {
+public class HrmModulesPage extends BasePage {
 
-	public HRMModulesPage(WebDriver driver) {
+	public HrmModulesPage(WebDriver driver) {
 		super(driver);
 	}
 
@@ -28,20 +28,20 @@ public class HRMModulesPage extends BasePage {
 	private WebElement saveButton;
 
 
-	public HRMModulesPage clickonmoduleslink() {
+	public HrmModulesPage clickonmoduleslink() {
 		moduleslink.click();
 		return this;
 
 	}
 	
-	public HRMModulesPage valiadtepagename(String Actualtext) {
+	public HrmModulesPage valiadtepagename(String Actualtext) {
 		String ExpectedText = pagetext.getText();
 		Assert.assertTrue(ExpectedText.equals(Actualtext));
 		return this;
 
 	}
 	
-	public HRMModulesPage clickonleavemodetoggle(String modulename) {
+	public HrmModulesPage clickonleavemodetoggle(String modulename) {
 		if(driver.findElements(By.xpath("//span[normalize-space()='"+modulename+"']")).size()!=0) {
 		leavemoduletoggle.click();
 		}
@@ -49,13 +49,13 @@ public class HRMModulesPage extends BasePage {
 
 	}
 	
-	public HRMModulesPage clickontimemodetoggle() {
+	public HrmModulesPage clickontimemodetoggle() {
 		timemoduletoggle.click();
 		return this;
 
 	}
 	
-	public HRMModulesPage clickonsavebutton() throws Exception {
+	public HrmModulesPage clickonsavebutton() throws Exception {
 		try {
 			saveButton.click();
 			return this;
@@ -65,7 +65,7 @@ public class HRMModulesPage extends BasePage {
 		
 	}
 	
-	public HRMModulesPage validatemoduleremoved(String modulename) throws Exception {
+	public HrmModulesPage validatemoduleremoved(String modulename) throws Exception {
 		try {
 			if(driver.findElements(By.xpath("//span[normalize-space()='"+modulename+"']")).size()==0) {
 				System.out.println(modulename+" is removed from menu");

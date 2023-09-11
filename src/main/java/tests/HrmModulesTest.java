@@ -5,21 +5,21 @@ import org.testng.annotations.Test;
 
 
 import factory.PageinstancesFactory;
-import pages.HRMAdminPage;
-import pages.HRMModulesPage;
+import pages.HrmAdminPage;
+import pages.HrmModulesPage;
 
 
-public class HRMModulesTest extends BaseTest {
+public class HrmModulesTest extends BaseTest {
 	
 	@Test(groups ={"SmokeTest"},testName = "TS 04 TC 01")
 	public void valiadtemodules() throws Exception  {
 		try {
-			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
-			hrmAdminPage.clickadmin();
+			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
+			hrmAdminPage.clickOnAdmin();
 			Thread.sleep(2000);
-			hrmAdminPage.clickonconfig();
+			hrmAdminPage.clickOnConfig();
 			Thread.sleep(2000);
-			HRMModulesPage hrmModulesPage=new HRMModulesPage(driver);
+			HrmModulesPage hrmModulesPage=new HrmModulesPage(driver);
 			hrmModulesPage.clickonmoduleslink();
 			Thread.sleep(2000);
 			hrmModulesPage.valiadtepagename("Module Configuration");
@@ -31,12 +31,12 @@ public class HRMModulesTest extends BaseTest {
 	@Test(groups ={"Regression Test"},testName = "TS 04 TC 02")
 	public void valiadtemodulestoggle() throws Exception  {
 		try {
-			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
-			hrmAdminPage.clickadmin();
+			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
+			hrmAdminPage.clickOnAdmin();
 			Thread.sleep(2000);
-			hrmAdminPage.clickonconfig();
+			hrmAdminPage.clickOnConfig();
 			Thread.sleep(2000);
-			HRMModulesPage hrmModulesPage=new HRMModulesPage(driver);
+			HrmModulesPage hrmModulesPage=new HrmModulesPage(driver);
 			hrmModulesPage.clickonmoduleslink();
 			Thread.sleep(2000);
 			hrmModulesPage.valiadtepagename("Module Configuration");

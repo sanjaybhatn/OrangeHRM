@@ -2,20 +2,20 @@ package tests;
 
 import org.testng.annotations.Test;
 import factory.PageinstancesFactory;
-import pages.HRMAdminPage;
-import pages.HRMEmailConfigurationPage;
+import pages.HrmAdminPage;
+import pages.HrmEmailConfigurationPage;
 
-public class HRMEmailConfigurationTest extends BaseTest {
+public class HrmEmailConfigurationTest extends BaseTest {
 
 	@Test(groups ={"SmokeTest"},testName = "TS 01 TC 01")
 	public void clickonEmailConfigurationSave() throws Exception {
 		try {
-			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
-			hrmAdminPage.clickadmin();
+			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
+			hrmAdminPage.clickOnAdmin();
 			Thread.sleep(2000);
-			hrmAdminPage.clickonconfig();
+			hrmAdminPage.clickOnConfig();
 			Thread.sleep(2000);
-			HRMEmailConfigurationPage hrmEmailConfigurationPage = new HRMEmailConfigurationPage(driver);
+			HrmEmailConfigurationPage hrmEmailConfigurationPage = new HrmEmailConfigurationPage(driver);
 			hrmEmailConfigurationPage.clickonEmailConfig();
 			Thread.sleep(2000);
 			hrmEmailConfigurationPage.clickonsendEmailRadionButton();
@@ -32,12 +32,12 @@ public class HRMEmailConfigurationTest extends BaseTest {
 	@Test(groups ={"SmokeTest"},testName = "TS 01 TC 02")
 	public void clickonEmailConfigurationReset() throws Exception {
 		try {
-			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
-			hrmAdminPage.clickadmin();
+			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
+			hrmAdminPage.clickOnAdmin();
 			Thread.sleep(2000);
-			hrmAdminPage.clickonconfig();
+			hrmAdminPage.clickOnConfig();
 			Thread.sleep(2000);
-			HRMEmailConfigurationPage hrmEmailConfigurationPage = new HRMEmailConfigurationPage(driver);
+			HrmEmailConfigurationPage hrmEmailConfigurationPage = new HrmEmailConfigurationPage(driver);
 			hrmEmailConfigurationPage.clickonEmailConfig();
 			Thread.sleep(2000);
 			hrmEmailConfigurationPage.clickonsendEmailRadionButton();
@@ -55,12 +55,12 @@ public class HRMEmailConfigurationTest extends BaseTest {
 	@Test(groups ={"Regression Test"},testName = "TS 01 TC 03")
 	public void clickonEmailConfigurationSecureSMTPSave() throws Exception {
 		try {
-			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
-			hrmAdminPage.clickadmin();
+			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
+			hrmAdminPage.clickOnAdmin();
 			Thread.sleep(2000);
-			hrmAdminPage.clickonconfig();
+			hrmAdminPage.clickOnConfig();
 			Thread.sleep(2000);
-			HRMEmailConfigurationPage hrmEmailConfigurationPage = new HRMEmailConfigurationPage(driver);
+			HrmEmailConfigurationPage hrmEmailConfigurationPage = new HrmEmailConfigurationPage(driver);
 			hrmEmailConfigurationPage.clickonEmailConfig();
 			Thread.sleep(2000);
 			hrmEmailConfigurationPage.clickonSecureSMTP();
@@ -82,12 +82,12 @@ public class HRMEmailConfigurationTest extends BaseTest {
 	@Test(groups ={"SmokeTest"},testName = "TS 01 TC 04")
 	public void clickonEmailConfigurationSecureSMTPReset() throws Exception {
 		try {
-			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
-			hrmAdminPage.clickadmin();
+			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
+			hrmAdminPage.clickOnAdmin();
 			Thread.sleep(2000);
-			hrmAdminPage.clickonconfig();
+			hrmAdminPage.clickOnConfig();
 			Thread.sleep(2000);
-			HRMEmailConfigurationPage hrmEmailConfigurationPage = new HRMEmailConfigurationPage(driver);
+			HrmEmailConfigurationPage hrmEmailConfigurationPage = new HrmEmailConfigurationPage(driver);
 			hrmEmailConfigurationPage.clickonEmailConfig();
 			Thread.sleep(2000);
 			hrmEmailConfigurationPage.clickonSecureSMTP();
@@ -110,12 +110,12 @@ public class HRMEmailConfigurationTest extends BaseTest {
 	@Test(groups ={"Regression Test"},testName = "TS 01 TC 05")
 	public void clickonEmailConfigurationSMTPSave() throws Exception {
 		try {
-			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
-			hrmAdminPage.clickadmin();
+			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
+			hrmAdminPage.clickOnAdmin();
 			Thread.sleep(2000);
-			hrmAdminPage.clickonconfig();
+			hrmAdminPage.clickOnConfig();
 			Thread.sleep(2000);
-			HRMEmailConfigurationPage hrmEmailConfigurationPage = new HRMEmailConfigurationPage(driver);
+			HrmEmailConfigurationPage hrmEmailConfigurationPage = new HrmEmailConfigurationPage(driver);
 			hrmEmailConfigurationPage.clickonEmailConfig();
 			Thread.sleep(2000);
 			hrmEmailConfigurationPage.clickonSMTP();
@@ -137,12 +137,12 @@ public class HRMEmailConfigurationTest extends BaseTest {
 	@Test(groups ={"Regression Test"},testName = "TS 01 TC 06")
 	public void clickonEmailConfigurationSMTPReset() throws Exception {
 		try {
-			HRMAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HRMAdminPage.class);
-			hrmAdminPage.clickadmin();
+			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
+			hrmAdminPage.clickOnAdmin();
 			Thread.sleep(2000);
-			hrmAdminPage.clickonconfig();
+			hrmAdminPage.clickOnConfig();
 			Thread.sleep(2000);
-			HRMEmailConfigurationPage hrmEmailConfigurationPage = new HRMEmailConfigurationPage(driver);
+			HrmEmailConfigurationPage hrmEmailConfigurationPage = new HrmEmailConfigurationPage(driver);
 			hrmEmailConfigurationPage.clickonEmailConfig();
 			Thread.sleep(2000);
 			hrmEmailConfigurationPage.clickonSMTP();
