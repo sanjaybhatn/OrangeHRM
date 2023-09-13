@@ -12,12 +12,10 @@ public class HrmOAuthClientTest extends BaseTest {
 		try {
 			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
 			hrmAdminPage.clickOnAdmin();
-			Thread.sleep(2000);
 			hrmAdminPage.clickOnConfig();
-			Thread.sleep(2000);
 			HrmOAuthClientPage hrmoAuthClientPage = new HrmOAuthClientPage(driver);
 			hrmoAuthClientPage.clickonOAuthlink();
-			hrmoAuthClientPage.valiadtepagename("OAuth Client List");
+			hrmoAuthClientPage.valiadtePageName("OAuth Client List");
 
 		} catch (Exception e) {
 			throw new Exception("Error occurred while the user clicking OAuth Client link");
@@ -29,20 +27,17 @@ public class HrmOAuthClientTest extends BaseTest {
 		try {
 			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
 			hrmAdminPage.clickOnAdmin();
-			Thread.sleep(2000);
 			hrmAdminPage.clickOnConfig();
-			Thread.sleep(2000);
 			HrmOAuthClientPage hrmoAuthClientPage = new HrmOAuthClientPage(driver);
 			hrmoAuthClientPage.clickonOAuthlink();
-			hrmoAuthClientPage.valiadtepagename("OAuth Client List");
+			hrmoAuthClientPage.valiadtePageName("OAuth Client List");
 			hrmoAuthClientPage.clickonAddbutton();
 			hrmoAuthClientPage.enterName("Test2");
 			hrmoAuthClientPage.enterRedirectURI("http://localhost:5173/#/oauth/redirect2");
-			hrmoAuthClientPage.clickonsaveButton();
+			hrmoAuthClientPage.clickonSaveButton();
 			hrmAdminPage.clickOnConfig();
-			Thread.sleep(2000);
 			hrmoAuthClientPage.clickonOAuthlink();
-			hrmoAuthClientPage.clickondeleteButton();
+			hrmoAuthClientPage.clickonDeleteButton();
 
 		} catch (Exception e) {
 			throw new Exception("Error occurred while the user validating OAuth Client link");

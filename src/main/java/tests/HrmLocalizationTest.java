@@ -12,13 +12,10 @@ public class HrmLocalizationTest extends BaseTest {
 		try {
 			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
 			hrmAdminPage.clickOnAdmin();
-			Thread.sleep(2000);
 			hrmAdminPage.clickOnConfig();
-			Thread.sleep(2000);
 			HrmLocalizationPage hrmLocalizationPage = new HrmLocalizationPage(driver);
-			hrmLocalizationPage.clickonlocalization();
-			Thread.sleep(2000);
-			hrmLocalizationPage.valiadtepagename("Localization");
+			hrmLocalizationPage.clickOnLocalization();
+			hrmLocalizationPage.valiadtePageName("Localization");
 		} catch (Exception e) {
 			throw new Exception("Error occurred while the user validation localization page");
 		}
@@ -30,13 +27,10 @@ public class HrmLocalizationTest extends BaseTest {
 		try {
 			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
 			hrmAdminPage.clickOnAdmin();
-			Thread.sleep(2000);
 			hrmAdminPage.clickOnConfig();
-			Thread.sleep(2000);
 			HrmLocalizationPage hrmLocalizationPage = new HrmLocalizationPage(driver);
-			hrmLocalizationPage.clickonlocalization();
-			Thread.sleep(2000);
-			hrmLocalizationPage.clickonsavebutton();
+			hrmLocalizationPage.clickOnLocalization();
+			hrmLocalizationPage.clickOnSaveButton();
 		} catch (Exception e) {
 			throw new Exception("Error occurred while the user clicking save button");
 		}

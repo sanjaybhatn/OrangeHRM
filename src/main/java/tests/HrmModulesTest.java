@@ -16,13 +16,10 @@ public class HrmModulesTest extends BaseTest {
 		try {
 			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
 			hrmAdminPage.clickOnAdmin();
-			Thread.sleep(2000);
 			hrmAdminPage.clickOnConfig();
-			Thread.sleep(2000);
 			HrmModulesPage hrmModulesPage=new HrmModulesPage(driver);
-			hrmModulesPage.clickonmoduleslink();
-			Thread.sleep(2000);
-			hrmModulesPage.valiadtepagename("Module Configuration");
+			hrmModulesPage.clickOnModulesLink();
+			hrmModulesPage.valiadtePageName("Module Configuration");
 		} catch (Exception e) {
 			throw new Exception("Error occurred while the user clicking module link");
 		}
@@ -33,19 +30,14 @@ public class HrmModulesTest extends BaseTest {
 		try {
 			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
 			hrmAdminPage.clickOnAdmin();
-			Thread.sleep(2000);
 			hrmAdminPage.clickOnConfig();
-			Thread.sleep(2000);
 			HrmModulesPage hrmModulesPage=new HrmModulesPage(driver);
-			hrmModulesPage.clickonmoduleslink();
-			Thread.sleep(2000);
-			hrmModulesPage.valiadtepagename("Module Configuration");
+			hrmModulesPage.clickOnModulesLink();
+			hrmModulesPage.valiadtePageName("Module Configuration");
 			hrmModulesPage.clickonleavemodetoggle("Leave");
-			Thread.sleep(1000);
-			hrmModulesPage.clickonsavebutton();
-			Thread.sleep(5000);
-			hrmModulesPage.validatemoduleremoved("Leave");
-			Thread.sleep(2000);
+			hrmModulesPage.clickOnSaveButton();
+			hrmModulesPage.validateModuleRemoved("Leave");
+			
 		} catch (Exception e) {
 			throw new Exception("Error occurred while the user clicking module link");
 		}

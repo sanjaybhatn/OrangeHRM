@@ -61,7 +61,8 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		WebDriverContext.setDriver(driver);
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		Thread.sleep(15000);
+		WebDriverWait wait = new WebDriverWait(driver, 50);
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//input[@placeholder='Username']"))));
 		WebElement login = driver.findElement(By.xpath("//input[@placeholder='Username']"));
 		WebElement pass = driver.findElement(By.xpath("//input[@placeholder='Password']"));
 		WebElement submit = driver.findElement(By.xpath("//button[@type='submit']"));

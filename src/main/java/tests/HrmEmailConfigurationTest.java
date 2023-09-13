@@ -7,44 +7,37 @@ import pages.HrmEmailConfigurationPage;
 
 public class HrmEmailConfigurationTest extends BaseTest {
 
-	@Test(groups ={"SmokeTest"},testName = "TS 01 TC 01")
+	@Test(groups = { "SmokeTest" }, testName = "TS 01 TC 01")
 	public void clickonEmailConfigurationSave() throws Exception {
 		try {
 			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
 			hrmAdminPage.clickOnAdmin();
-			Thread.sleep(2000);
 			hrmAdminPage.clickOnConfig();
-			Thread.sleep(2000);
 			HrmEmailConfigurationPage hrmEmailConfigurationPage = new HrmEmailConfigurationPage(driver);
-			hrmEmailConfigurationPage.clickonEmailConfig();
-			Thread.sleep(2000);
-			hrmEmailConfigurationPage.clickonsendEmailRadionButton();
-			hrmEmailConfigurationPage.toggleonsendTestEmailToggle();
-			hrmEmailConfigurationPage.entertestemail("sanjay.bhatv@gmail.com");
+			hrmEmailConfigurationPage.clickOnEmailConfig();
+			hrmEmailConfigurationPage.clickOnSendEmailRadionButton();
+			hrmEmailConfigurationPage.toggleOnSendTestEmailToggle();
+			hrmEmailConfigurationPage.enterTestEmail("sanjay.bhatv@gmail.com");
 			hrmEmailConfigurationPage.submit();
-			Thread.sleep(2000);
+			hrmEmailConfigurationPage.validatedSuccussMessage();
 
 		} catch (Exception e) {
 			throw new Exception("Error occurred while the valiading sendmail save functionality");
 		}
 	}
 
-	@Test(groups ={"SmokeTest"},testName = "TS 01 TC 02")
+	@Test(groups = { "SmokeTest" }, testName = "TS 01 TC 02")
 	public void clickonEmailConfigurationReset() throws Exception {
 		try {
 			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
 			hrmAdminPage.clickOnAdmin();
-			Thread.sleep(2000);
 			hrmAdminPage.clickOnConfig();
-			Thread.sleep(2000);
 			HrmEmailConfigurationPage hrmEmailConfigurationPage = new HrmEmailConfigurationPage(driver);
-			hrmEmailConfigurationPage.clickonEmailConfig();
-			Thread.sleep(2000);
-			hrmEmailConfigurationPage.clickonsendEmailRadionButton();
-			hrmEmailConfigurationPage.toggleonsendTestEmailToggle();
-			hrmEmailConfigurationPage.entertestemail("sanjay.bhatv@gmail.com");
+			hrmEmailConfigurationPage.clickOnEmailConfig();
+			hrmEmailConfigurationPage.clickOnSendEmailRadionButton();
+			hrmEmailConfigurationPage.toggleOnSendTestEmailToggle();
+			hrmEmailConfigurationPage.enterTestEmail("sanjay.bhatv@gmail.com");
 			hrmEmailConfigurationPage.reset();
-			Thread.sleep(2000);
 			hrmEmailConfigurationPage.validateRequiredMessage();
 
 		} catch (Exception e) {
@@ -52,54 +45,47 @@ public class HrmEmailConfigurationTest extends BaseTest {
 		}
 	}
 
-	@Test(groups ={"Regression Test"},testName = "TS 01 TC 03")
+	@Test(groups = { "Regression Test" }, testName = "TS 01 TC 03")
 	public void clickonEmailConfigurationSecureSMTPSave() throws Exception {
 		try {
 			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
 			hrmAdminPage.clickOnAdmin();
-			Thread.sleep(2000);
 			hrmAdminPage.clickOnConfig();
-			Thread.sleep(2000);
 			HrmEmailConfigurationPage hrmEmailConfigurationPage = new HrmEmailConfigurationPage(driver);
-			hrmEmailConfigurationPage.clickonEmailConfig();
-			Thread.sleep(2000);
-			hrmEmailConfigurationPage.clickonSecureSMTP();
-			hrmEmailConfigurationPage.enterHostname("smtp.gmail.com");
-			hrmEmailConfigurationPage.enterPortname("587");
-			hrmEmailConfigurationPage.clickonyesRadioButton();
+			hrmEmailConfigurationPage.clickOnEmailConfig();
+			hrmEmailConfigurationPage.clickOnSecureSMTP();
+			hrmEmailConfigurationPage.enterHostName("smtp.gmail.com");
+			hrmEmailConfigurationPage.enterPortName("587");
+			hrmEmailConfigurationPage.clickOnYesRadioButton();
 			hrmEmailConfigurationPage.enterSMTPUser("Admin");
-			hrmEmailConfigurationPage.enterSMTPpass("admin123");
-			hrmEmailConfigurationPage.toggleonsendTestEmailToggle1();
-			hrmEmailConfigurationPage.entertestemail2("sanjay.bhatv@gmail.com");
+			hrmEmailConfigurationPage.enterSMTPPass("admin123");
+			hrmEmailConfigurationPage.toggleOnSendTestEmailToggle2();
+			hrmEmailConfigurationPage.enterTestEmail2("sanjay.bhatv@gmail.com");
 			hrmEmailConfigurationPage.submit();
-			Thread.sleep(2000);
+			hrmEmailConfigurationPage.validatedSuccussMessage();
 
 		} catch (Exception e) {
 			throw new Exception("Error occurred while the valiading SecureSMTP save functionality");
 		}
 	}
 
-	@Test(groups ={"SmokeTest"},testName = "TS 01 TC 04")
+	@Test(groups = { "SmokeTest" }, testName = "TS 01 TC 04")
 	public void clickonEmailConfigurationSecureSMTPReset() throws Exception {
 		try {
 			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
 			hrmAdminPage.clickOnAdmin();
-			Thread.sleep(2000);
 			hrmAdminPage.clickOnConfig();
-			Thread.sleep(2000);
 			HrmEmailConfigurationPage hrmEmailConfigurationPage = new HrmEmailConfigurationPage(driver);
-			hrmEmailConfigurationPage.clickonEmailConfig();
-			Thread.sleep(2000);
-			hrmEmailConfigurationPage.clickonSecureSMTP();
-			hrmEmailConfigurationPage.enterHostname("smtp.gmail.com");
-			hrmEmailConfigurationPage.enterPortname("587");
-			hrmEmailConfigurationPage.clickonyesRadioButton();
+			hrmEmailConfigurationPage.clickOnEmailConfig();
+			hrmEmailConfigurationPage.clickOnSecureSMTP();
+			hrmEmailConfigurationPage.enterHostName("smtp.gmail.com");
+			hrmEmailConfigurationPage.enterPortName("587");
+			hrmEmailConfigurationPage.clickOnYesRadioButton();
 			hrmEmailConfigurationPage.enterSMTPUser("Admin");
-			hrmEmailConfigurationPage.enterSMTPpass("admin123");
-			hrmEmailConfigurationPage.toggleonsendTestEmailToggle1();
-			hrmEmailConfigurationPage.entertestemail2("sanjay.bhatv@gmail.com");
+			hrmEmailConfigurationPage.enterSMTPPass("admin123");
+			hrmEmailConfigurationPage.toggleOnSendTestEmailToggle2();
+			hrmEmailConfigurationPage.enterTestEmail2("sanjay.bhatv@gmail.com");
 			hrmEmailConfigurationPage.reset();
-			Thread.sleep(2000);
 			hrmEmailConfigurationPage.validateRequiredMessage();
 
 		} catch (Exception e) {
@@ -107,54 +93,47 @@ public class HrmEmailConfigurationTest extends BaseTest {
 		}
 	}
 
-	@Test(groups ={"Regression Test"},testName = "TS 01 TC 05")
+	@Test(groups = { "Regression Test" }, testName = "TS 01 TC 05")
 	public void clickonEmailConfigurationSMTPSave() throws Exception {
 		try {
 			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
 			hrmAdminPage.clickOnAdmin();
-			Thread.sleep(2000);
 			hrmAdminPage.clickOnConfig();
-			Thread.sleep(2000);
 			HrmEmailConfigurationPage hrmEmailConfigurationPage = new HrmEmailConfigurationPage(driver);
-			hrmEmailConfigurationPage.clickonEmailConfig();
-			Thread.sleep(2000);
-			hrmEmailConfigurationPage.clickonSMTP();
-			hrmEmailConfigurationPage.enterHostname("smtp.gmail.com");
-			hrmEmailConfigurationPage.enterPortname("587");
-			hrmEmailConfigurationPage.clickonyesRadioButton();
+			hrmEmailConfigurationPage.clickOnEmailConfig();
+			hrmEmailConfigurationPage.clickOnSMTP();
+			hrmEmailConfigurationPage.enterHostName("smtp.gmail.com");
+			hrmEmailConfigurationPage.enterPortName("587");
+			hrmEmailConfigurationPage.clickOnYesRadioButton();
 			hrmEmailConfigurationPage.enterSMTPUser("Admin");
-			hrmEmailConfigurationPage.enterSMTPpass("admin123");
-			hrmEmailConfigurationPage.toggleonsendTestEmailToggle1();
-			hrmEmailConfigurationPage.entertestemail2("sanjay.bhatv@gmail.com");
+			hrmEmailConfigurationPage.enterSMTPPass("admin123");
+			hrmEmailConfigurationPage.toggleOnSendTestEmailToggle2();
+			hrmEmailConfigurationPage.enterTestEmail2("sanjay.bhatv@gmail.com");
 			hrmEmailConfigurationPage.submit();
-			Thread.sleep(2000);
+			hrmEmailConfigurationPage.validatedSuccussMessage();
 
 		} catch (Exception e) {
 			throw new Exception("Error occurred while the valiading SMTP save functionality");
 		}
 	}
 
-	@Test(groups ={"Regression Test"},testName = "TS 01 TC 06")
+	@Test(groups = { "Regression Test" }, testName = "TS 01 TC 06")
 	public void clickonEmailConfigurationSMTPReset() throws Exception {
 		try {
 			HrmAdminPage hrmAdminPage = PageinstancesFactory.getInstance(HrmAdminPage.class);
 			hrmAdminPage.clickOnAdmin();
-			Thread.sleep(2000);
 			hrmAdminPage.clickOnConfig();
-			Thread.sleep(2000);
 			HrmEmailConfigurationPage hrmEmailConfigurationPage = new HrmEmailConfigurationPage(driver);
-			hrmEmailConfigurationPage.clickonEmailConfig();
-			Thread.sleep(2000);
-			hrmEmailConfigurationPage.clickonSMTP();
-			hrmEmailConfigurationPage.enterHostname("smtp.gmail.com");
-			hrmEmailConfigurationPage.enterPortname("587");
-			hrmEmailConfigurationPage.clickonyesRadioButton();
+			hrmEmailConfigurationPage.clickOnEmailConfig();
+			hrmEmailConfigurationPage.clickOnSMTP();
+			hrmEmailConfigurationPage.enterHostName("smtp.gmail.com");
+			hrmEmailConfigurationPage.enterPortName("587");
+			hrmEmailConfigurationPage.clickOnYesRadioButton();
 			hrmEmailConfigurationPage.enterSMTPUser("Admin");
-			hrmEmailConfigurationPage.enterSMTPpass("admin123");
-			hrmEmailConfigurationPage.toggleonsendTestEmailToggle1();
-			hrmEmailConfigurationPage.entertestemail2("sanjay.bhatv@gmail.com");
+			hrmEmailConfigurationPage.enterSMTPPass("admin123");
+			hrmEmailConfigurationPage.toggleOnSendTestEmailToggle2();
+			hrmEmailConfigurationPage.enterTestEmail2("sanjay.bhatv@gmail.com");
 			hrmEmailConfigurationPage.reset();
-			Thread.sleep(2000);
 			hrmEmailConfigurationPage.validateRequiredMessage();
 
 		} catch (Exception e) {
